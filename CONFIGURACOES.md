@@ -43,4 +43,22 @@ create   features/step_definitions
 create   features/support
 create   features/support/env.rb
 ```
-Eu gosto de trabalhar com duas pastas a mais, que seria cucumber e a pasta specifications.
+Eu gosto de trabalhar com duas pastas a mais, que seria cucumber e a pasta specifications e ficaria da seguinte maneira:
+
+```ruby
+cucumber
+cucumber/features
+cucumber/features/specifications
+cucumber/features/step_definitions
+cucumber/features/support
+cucumber/features/support/env.rb
+```
+Eu gosto da pasta specifications para colocar dentro dela todas as minhas features. Mas pode-se criar quantas pastas você julgue necessário. É até recomendado se seu sistema for muito complexo, por exemplo, um e-commerce que tem Cadastro, Pagamento, Notificação, etc. E com isso você teria uma pasta dentro de specifications para cada frente, até mesmo para ter controle na hora de dar alguma manutenção.
+
+Então vamos lá:
+
+```ruby
+specifications serve para colocar os arquivos .features;
+step_definitions serve para colocar os arquivos de steps .rb;
+support serve para colocarmos qualquer tipo de configuração para os nossos testes também .rb (assim como o arquivo env.rb, que possui configurações iniciais, gems a serem utilizadas para os testes, etc.). Geralmente se coloca arquivos de Page Objects dentro de support, arquivo de Hooks.
+```
