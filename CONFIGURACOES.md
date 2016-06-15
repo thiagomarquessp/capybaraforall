@@ -34,3 +34,13 @@ Na mesma pasta onde foi criado o arquivo Gemfile, vamos iniciar o nosso projeto 
 ```ruby
 cucumber --init
 ```
+
+Após o comando cucumber --init será criada a estrutura básica para início do desenvolvimento:
+
+```ruby
+create   features
+create   features/step_definitions
+create   features/support
+create   features/support/env.rb
+```
+Eu gosto de trabalhar com duas pastas a mais, que seria cucumber e a pasta specifications.
