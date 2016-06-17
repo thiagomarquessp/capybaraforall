@@ -67,61 +67,9 @@ expect(page).to have_content ‘Cadastro efetuado com sucesso’ – Procura a m
 within_frame 'id do frame' do
   comandos de para interagir dentro do frame
 end - Entra no Frame para continuar os testes.
-
-page.has_css?('css do que vc quer validar na tela', :text => 'texto pra ser validado', :visible => true) - Olha o texto que está no elemento e ve se esse texto está visível.
-
 ```
 Uma ferramenta poderosa para busca de elementos HTML é o Firebug (eu gosto e prefiro) e nessa ferramenta você pode com a setinha clicar no elemento que você deseja e pegar a propriedade dele (ID por exemplo). No próximo eu vou falar como buscar elementos usando algum seletor. Mas por hora, se não tiver ID por exemplo, clica com botão direito na seleção do elemento e clica em copiar caminho CSS, vai em Console (no próprio Firebug e faça isso: $('aqui voce cola') e depois da enter pra ver se ele encontra o seu elemento.
 
 Então vamos aplicar:
 
-Todo teste automatizado é derivado de uma ação manual feita em algum momento em algum lugar, então vamos lá acessar o arquivo register.rb e deixar o nosso código da seguinte maneira:
-
-```ruby
-Given(/^I access the Walmart site$/) do
-  visit "https://www.walmart.com.br/"
-end
-
-When(/^I click on Register$/) do
-  find(:css, '#topbar-signup-link').click
-end
-
-And(/^fill in the fields$/) do
-  within_frame 'iframeLogin' do
-    fill_in 'notifymeClientName', with: 'Capybara for All'
-    fill_in 'email', with: 'emailcapybaraforall@gmail.com'
-    fill_in 'cpfcnpj', with: '02962965202'
-    fill_in 'phone', with: '1124435654'
-    fill_in 'password', with: 'inicial1234'
-    fill_in 'signupClientPwdCheck', with: 'inicial1234'
-    find(:css, '#signupButtonSend').click
-  end
-end
-
-And(/^click Cadastar$/) do
-  within_frame 'iframeLogin' do
-    find(:css, '#signupButtonSend').click
-  end
-end
-
-Then(/^my registration will be successfully made$/) do
-  page.has_css?('input.suggestion-search', :text => 'Capybara for All', :visible => true)
-end
-```
-Finalizando, ir no terminal, navegar até a página cucumber e executar o próprio comando cucumber e ver a mágica acontecer e quando terminar o teste, você verá o seguinte resultado:
-
-```ruby
-Feature: Register
-
-  Scenario: Register on Wal Mart                   # features/specifications/register.feature:3
-    Given I access the Walmart site                # features/step_definitions/register.rb:2
-    When I click on Register                       # features/step_definitions/register.rb:6
-    And fill in the fields                         # features/step_definitions/register.rb:10
-    And click Cadastar                             # features/step_definitions/register.rb:22
-    Then my registration will be successfully made # features/step_definitions/register.rb:26
-
-1 scenario (1 passed)
-5 steps (5 passed)
-0m27.645s
-```
-Onde todos os passos foram executados em 28 segundos. Tudo passou =) ... Coisa linda demais.
+Todo teste automatizado é derivado de uma ação manual feita em algum momento em algum lugar, então vamos lá acessar o
