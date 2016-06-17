@@ -52,6 +52,46 @@ When(/^I click on Register$/) do
   pending # Write code here that turns the phrase above into concrete actions
 end
 
+And(/^fill in the fields$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+And(/^click Cadastar$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Then(/^my registration will be successfully made$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+```
+Traduzindo:
+
+```ruby
+Feature: Register
+
+  Scenario: Register on Wal Mart                   # features/specifications/register.feature:3
+    Given I access the Walmart site                # features/specifications/register.feature:5
+    When I click on Register                       # features/specifications/register.feature:6
+    And fill in the fields                         # features/specifications/register.feature:7
+    And click Cadastar                             # features/specifications/register.feature:8
+    Then my registration will be successfully made # features/specifications/register.feature:9
+
+1 scenario (1 undefined)
+5 steps (5 undefined)
+0m0.049s
+
+Ele executou linha a linha do seu arquivo.feature, onde ele encontrou um cenário com 5 passos de execução. O termo undefined quer dizer que ainda não foi implementado os testes para que esse inglês ou português estruturado possa realizar de fato as ações necessárias para o testes ser concluído;
+
+You can implement step definitions for undefined steps with these snippets:
+
+Given(/^I access the Walmart site$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+When(/^I click on Register$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
 When(/^fill in the fields$/) do
   pending # Write code here that turns the phrase above into concrete actions
 end
@@ -63,4 +103,8 @@ end
 Then(/^my registration will be successfully made$/) do
   pending # Write code here that turns the phrase above into concrete actions
 end
+
+Esse é o resultado de cada passo a passo criado no arquivo.feature e vamos colocar na cabeça o seguinte:
+
+1.(/^bla bla bla bla bla$/) é uma RegEx (Expressão Regular), e por hora entendam que quando o seu teste for iniciado, ele vai ler esse trecho de palavras e vai entender o que deve ser feito e vai ser executado um trecho de código que veremos no arquivo Criando Steps Definitions. Para saber mais sobre RegEx, segue o link do Wikipedia: https://goo.gl/cXFPYK.
 ```
