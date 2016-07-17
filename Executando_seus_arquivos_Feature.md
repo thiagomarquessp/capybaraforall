@@ -3,6 +3,10 @@
 A primeira coisa a ser feita é escrever a feature a ser testada utilizando Gherkin como base na escrita, como por exemplo:
 
 ```ruby
+Feature: Register
+
+Scenario: Register on Wal Mart   
+
 Given I access the Walmart site
 When I click on Register
 And fill in the fields
