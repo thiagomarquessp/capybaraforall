@@ -62,3 +62,19 @@ specifications serve para colocar os arquivos .features;
 step_definitions serve para colocar os arquivos de steps .rb;
 support serve para colocarmos qualquer tipo de configuração para os nossos testes também .rb (assim como o arquivo env.rb, que possui configurações iniciais, gems a serem utilizadas para os testes, etc.). Geralmente se coloca arquivos de Page Objects dentro de support, arquivo de Hooks.
 ```
+Se vocês repararem quando o comando init é dado, um arquivo chamado env.rb é criado na pasta support e esse arquivo nada mais é que um arquivo de configuração para os testes, e nele deve conter TODAS as gems que você quer utilizar, antecedidos de um require e também alguma configuração específica para que TODA vez que eu rodar o comando cucumber, ele olhe nesse arquivo, verifica as gems e as configurações para poder seguir com o teste. Segue o exemplo que vamos utilizar:
+
+```ruby
+require "capybara/cucumber"
+require "selenium-webdriver"
+
+Capybara.default_driver = :selenium
+Capybara.default_max_wait_time = 60
+```
+Onde, require "gem a ser utilizada" eu estou falando que para rodar esse projeto, eu estou utilizando essa gem.
+
+Capybara.default_driver = :selenium (Defino o Driver que eu vou utilizar, no caso, Selenium Webdriver. Mais a frente falarei de Webkit como driver para rodar os testes em Headles, vulgo por baixo dos panos rsrsr);
+
+Capybara.default_max_wait_time = 60 (Time out definido nesse caso, em 60 segundos, mas o valor você que estabelece).
+
+Dica: Tem os requires no arquivo env.rb eu tenho que ter TODAS as gems instaladas no meu computador e/ou ambiente de trabalho.
