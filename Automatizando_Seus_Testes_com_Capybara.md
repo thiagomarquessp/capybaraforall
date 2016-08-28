@@ -33,3 +33,27 @@ Com o Homebrew instalado, será necessário instalar o “Qt” - Framework mult
 ```ruby
 brew install qt
 ```
+
+Instalar o gerenciador de versões RVM (eu gosto), mas tem também o rbenv. Para instalar o rvm:
+
+```ruby
+1. gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+2. curl -sSL https://get.rvm.io | bash -s stable
+3. Reiniciar o terminal
+4. rvm install 2.2.2
+
+Caso o "curl" não estiver instalado, basta "brew install curl".
+```
+
+Ubuntu:
+
+Instalar o gerenciador de versões RVM (eu gosto), mas tem também o rbenv. Para instalar o rvm:
+
+```ruby
+1. gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+2. curl -sSL https://get.rvm.io | bash -s stable
+3. Reiniciar o terminal
+4. rvm install 2.2.2
+
+Caso o "curl" não estiver instalado, basta "brew install curl".
+```
