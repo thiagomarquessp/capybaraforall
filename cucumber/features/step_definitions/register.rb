@@ -27,4 +27,5 @@ end
 
 Then(/^my registration will be successfully made$/) do
   page.has_css?('input.suggestion-search', :text => 'Capybara for All', :visible => true)
+  puts 'uhul'
 end
