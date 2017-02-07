@@ -1,6 +1,6 @@
 # encoding: utf-8
 Given(/^I access the Walmart site$/) do
-  visit "https://www.walmart.com.br/"
+  visit "/"
 end
 
 When(/^I click on Register$/) do

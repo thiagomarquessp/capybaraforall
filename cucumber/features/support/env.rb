@@ -7,3 +7,5 @@ end
 
 Capybara.default_driver = :selenium
 Capybara.default_max_wait_time = 60
+
+Capybara.app_host = "https://www.walmart.com.br/"
