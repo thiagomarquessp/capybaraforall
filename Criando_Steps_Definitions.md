@@ -71,8 +71,35 @@ end - Entra no Frame para continuar os testes.
 page.has_css?('css do que vc quer validar na tela', :text => 'texto pra ser validado', :visible => true) - Olha o texto que está no elemento e ve se esse texto está visível.
 
 ```
-Uma ferramenta poderosa para busca de elementos HTML é o Firebug (eu gosto e prefiro) e nessa ferramenta você pode com a setinha clicar no elemento que você deseja e pegar a propriedade dele (ID por exemplo). No próximo eu vou falar como buscar elementos usando algum seletor. Mas por hora, se não tiver ID por exemplo, clica com botão direito na seleção do elemento e clica em copiar caminho CSS, vai em Console (no próprio Firebug e faça isso: $('aqui voce cola') e depois da enter pra ver se ele encontra o seu elemento.
+# Forma de buscar um elemento:
 
+Uma ferramenta de busca de elemento muito boa é o próprio inspecionar do Google Chrome, mas também tem o Firebug no Firefox, em ambos a forma de busca de elemento é a mesma. Eu vou passar aqui a forma via Jquery, mas tem outros seletores que tu podes usar OK. Bem, quando tu quiseres buscar um elemento, pense em saber como uma página html feita e abra essa página, clica com botão direto do mouse e vai em inspecionar elemento. Ele vai marcar o elemento em questão e vai ser algo mais ou menos assim: 
+
+```ruby
+<a id="topbar-login-link" class="login-link topbar-buttons button-link topbar-login-js" href="">
+```
+No console do navegador, a forma mágica será: # para ID e . para classes (cerquilha para ID e ponto para classes), por exemplo, vou buscar o elemento do exemplo pelo ID: 
+
+```ruby
+$('#topbar-login-link') e aquando eu dou enter:
+[a#topbar-login-link.login-link.topbar-buttons.button-link.topbar-login-js, context: document, selector: "#topbar-login-link"]
+```
+Quando vc passar o mouse por cime do resultado, o elemento vai ficar em destaque, que te garante que o elemento  de fato o elemento que você quer trabalhar.
+
+E se fosse pela classe do elemento: 
+```ruby
+$('.login-link') e aquando eu dou enter:
+[a#topbar-login-link.login-link.topbar-buttons.button-link.topbar-login-js, context: document, selector: "#topbar-login-link"]
+```
+Se o elemento que estiver em destaque for o que você realmente quer trabalhar, tu vai pegar o Id ou a classe e vai colocar nos comandos do capybara, por exemplo: 
+
+```ruby
+Buscando pelo ID
+find(:css, '#topbar-login-link').click
+
+Buscando pela classe
+find(:css, '.login-link').click
+```
 Então vamos aplicar:
 
 Todo teste automatizado é derivado de uma ação manual feita em algum momento em algum lugar, então vamos lá acessar o arquivo register.rb e deixar o nosso código da seguinte maneira:
