@@ -8,13 +8,13 @@ Bom, eu vou descorrer o assunto de uma forma bem simples.
 
 Antes de mais nada vamos a configuração do ambiente:
 
-Windows:
+**Windows:**
 
 Necessário: [rubyinstaller](http://rubyinstaller.org/downloads/).
 
 Obs.: Quando se instala o ruby, será necessário a instalação do DevKit correspondente da versão que você instalou.
 
-Mac:
+**Mac:**
 
 Necessário: Baixar o Xcode pelo [link:](https://developer.apple.com/xcode/downloads/). Aprendi que sempre que instalar o SO, a primeira coisa será instalar o Xcode.
 
@@ -45,7 +45,7 @@ Instalar o gerenciador de versões RVM (eu gosto), mas tem também o rbenv. Para
 Caso o "curl" não estiver instalado, basta "brew install curl".
 ```
 
-Ubuntu:
+**Ubuntu:**
 
 Instalar o gerenciador de versões RVM (eu gosto), mas tem também o rbenv. Para instalar o rvm:
 
