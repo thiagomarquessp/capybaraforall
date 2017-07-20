@@ -100,3 +100,5 @@ Capybara.default_max_wait_time = 60 (Time out definido nesse caso, em 60 segundo
 Capybara.app_host eu coloco a url do produto que estou a trabalhar.
 
 Dica: Tem os requires no arquivo env.rb eu tenho que ter TODAS as gems instaladas no meu computador e/ou ambiente de trabalho.
+
+Agora que temos o ambiente montado, devemos enteder algumas coisas. A primeira dela é como trabalhar com [arquivos de feature.](https://github.com/thiagomarquessp/capybaraforall/blob/master/Executando_seus_arquivos_Feature.md)
