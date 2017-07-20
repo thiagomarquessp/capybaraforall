@@ -112,3 +112,4 @@ Esse é o resultado de cada passo a passo criado no arquivo.feature e vamos colo
 
 1.(/^bla bla bla bla bla$/) é uma RegEx (Expressão Regular), e por hora entendam que quando o seu teste for iniciado, ele vai ler esse trecho de palavras e vai entender o que deve ser feito e vai ser executado um trecho de código que veremos no arquivo Criando Steps Definitions. Para saber mais sobre RegEx, segue o link do Wikipedia: https://goo.gl/cXFPYK.
 ```
+Muito bem, e agora, como implementar os testes?? Essa é a parte mais fácil e vamos ver no [próximo item.](https://github.com/thiagomarquessp/capybaraforall/blob/master/Criando_Steps_Definitions.md)
