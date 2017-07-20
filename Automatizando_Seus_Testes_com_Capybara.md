@@ -57,3 +57,4 @@ Instalar o gerenciador de versões RVM (eu gosto), mas tem também o rbenv. Para
 
 Caso o "curl" não estiver instalado, basta "brew install curl".
 ```
+Agora que temos a base para trabalhar, vamos então a parte das [configurações](https://github.com/thiagomarquessp/capybaraforall/blob/master/Configuracoes.md), pois devemos montar nosso ambiente para trabalhar.
