@@ -84,7 +84,7 @@ No console do navegador, a forma mágica será: # para ID e . para classes (cerq
 $('#topbar-login-link') e aquando eu dou enter:
 [a#topbar-login-link.login-link.topbar-buttons.button-link.topbar-login-js, context: document, selector: "#topbar-login-link"]
 ```
-Quando vc passar o mouse por cime do resultado, o elemento vai ficar em destaque, que te garante que o elemento  de fato o elemento que você quer trabalhar.
+Quando vc passar o mouse por cima do resultado, o elemento vai ficar em destaque, que te garante que o elemento  de fato o elemento que você quer trabalhar.
 
 E se fosse pela classe do elemento: 
 ```ruby
