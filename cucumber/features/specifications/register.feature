@@ -1,9 +1,7 @@
 Feature: Register
 
-Scenario: Register on Wal Mart
+Scenario: Register on Automation Pratice
 
-  Given I access the Walmart site
-  When I click on Register
-  And fill in the fields
-  And click Cadastar
-  Then my registration will be successfully made
+Given I click on Sign in
+When I fill in obligatory fields
+Then my registration will be successfully made
