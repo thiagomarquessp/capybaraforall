@@ -40,8 +40,6 @@ Instalar o gerenciador de versões RVM (eu gosto), mas tem também o rbenv. Para
 1. gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
 2. curl -sSL https://get.rvm.io | bash -s stable
 3. Reiniciar o terminal
-4. rvm install 2.2.2
-
 Caso o "curl" não estiver instalado, basta "brew install curl".
 ```
 
@@ -53,8 +51,20 @@ Instalar o gerenciador de versões RVM (eu gosto), mas tem também o rbenv. Para
 1. gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
 2. curl -sSL https://get.rvm.io | bash -s stable
 3. Reiniciar o terminal
-4. rvm install 2.2.2
-
 Caso o "curl" não estiver instalado, basta "brew install curl".
 ```
+
+
+Para instalar alguma versão do ruby específica, primeiro de uma olhada nas [releases](https://www.ruby-lang.org/en/downloads/releases/) e depois através do rvm, faça:
+
+```ruby
+rvm install + versão
+
+Exemplo
+
+rvm install 2.4.3
+```
+
+Eu migrei os testes da versão 2.3 para 2.4 recentemente e não estou tento problemas, pelo contrário, to gostando do fator performance e estabilidade.
+
 Agora que temos a base para trabalhar, vamos então a parte das [configurações](https://github.com/thiagomarquessp/capybaraforall/blob/master/Configuracoes.md), pois devemos montar nosso ambiente para trabalhar.
