@@ -65,6 +65,6 @@ Exemplo
 rvm install 2.4.3
 ```
 
-Eu migrei os testes da versão 2.3 para 2.4 recentemente e não estou tento problemas, pelo contrário, to gostando do fator performance e estabilidade.
+Eu migrei os testes da versão 2.3 para 2.4 recentemente e não estou tendo problemas, pelo contrário, to gostando do fator performance e estabilidade.
 
 Agora que temos a base para trabalhar, vamos então a parte das [configurações](https://github.com/thiagomarquessp/capybaraforall/blob/master/Configuracoes.md), pois devemos montar nosso ambiente para trabalhar.
