@@ -32,7 +32,7 @@ Em outros artigos vou falar de técnicas mais específicas e com outros comandos
 ```ruby
 visit "url do site" - Bom , não precisa falar muito dessa neh =)
 
-fill_in ‘ID do elemento para inserir valor’, :with “Aprendendo Capybara” – Irá inserir no elemento a string Aprendendo Capybara.
+fill_in ‘ID do elemento para inserir valor’, :with => “Aprendendo Capybara” – Irá inserir no elemento a string Aprendendo Capybara.
 
 find(:id, “id do elemento”).click – Clica em um elemento definido por ID.
 find(:css, “css do elemento”).click – Clica em um elemento definido por CSS.
