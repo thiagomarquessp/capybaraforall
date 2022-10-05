@@ -1,8 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.5.2)
-      public_suffix (>= 2.0.2, < 4.0)
+    addressable (2.8.1)
+      public_suffix (>= 2.0.2, < 6.0)
     backports (3.11.1)
     builder (3.2.3)
     capybara (2.17.0)
@@ -39,7 +39,7 @@ GEM
     multi_test (0.1.2)
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
-    public_suffix (3.0.1)
+    public_suffix (5.0.0)
     rack (2.0.4)
     rack-test (0.8.2)
       rack (>= 1.0, < 3)
